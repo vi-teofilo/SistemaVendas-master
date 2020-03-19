@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<persistence version="2.1" xmlns="http://xmlns.jcp.org/xml/ns/persistence" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/persistence http://xmlns.jcp.org/xml/ns/persistence/persistence_2_1.xsd">
+  <persistence-unit name="persistence" transaction-type="RESOURCE_LOCAL">
+    <provider>org.eclipse.persistence.jpa.PersistenceProvider</provider>
+    <class>br.com.foursys.vendas.model.ContasReceber</class>
+    <class>br.com.foursys.vendas.model.Estado</class>
+    <class>br.com.foursys.vendas.model.Fornecedor</class>
+    <class>br.com.foursys.vendas.model.Contato</class>
+    <class>br.com.foursys.vendas.model.Produto</class>
+    <class>br.com.foursys.vendas.model.ContasPagar</class>
+    <class>br.com.foursys.vendas.model.Funcionario</class>
+    <class>br.com.foursys.vendas.model.Venda</class>
+    <class>br.com.foursys.vendas.model.PessoaJuridica</class>
+    <class>br.com.foursys.vendas.model.Cidade</class>
+    <class>br.com.foursys.vendas.model.Cliente</class>
+    <class>br.com.foursys.vendas.model.PessoaFisica</class>
+    <class>br.com.foursys.vendas.model.Estoque</class>
+    <class>br.com.foursys.vendas.model.ItemVenda</class>
+    <class>br.com.foursys.vendas.model.Endereco</class>
+    <class>br.com.foursys.vendas.model.ItemCompra</class>
+    <class>br.com.foursys.vendas.model.LogUsuario</class>
+    <class>br.com.foursys.vendas.model.Compra</class>
+    <properties>
+      <property name="javax.persistence.jdbc.url" value="jdbc:mysql://localhost:3306/vendas?zeroDateTimeBehavior=convertToNull"/>
+      <property name="javax.persistence.jdbc.user" value="root"/>
+      <property name="javax.persistence.jdbc.driver" value="com.mysql.jdbc.Driver"/>
+      <property name="javax.persistence.jdbc.password" value="root"/>
+    </properties>
+  </persistence-unit>
+</persistence>
